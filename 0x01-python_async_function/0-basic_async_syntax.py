@@ -1,5 +1,6 @@
-#!/usr/bin/python3
-"""this is a function for task 0"""
+#!/usr/bin/env python3
+"""Write an asynchronous task 0
+"""
 
 
 import random
@@ -7,7 +8,7 @@ import asyncio
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """Wait time"""
+    """Wait some at time"""
     wait_time = random.random() * max_delay
     await asyncio.sleep(wait_time)
     return wait_time
